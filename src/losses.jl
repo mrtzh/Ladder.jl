@@ -2,14 +2,6 @@
 # provides various loss functions
 #
 
-module Losses
-
-export
-    loss01,
-    cliplogloss,
-    sqloss,
-    empirical_loss
-
 # 0-1 loss
 loss01(y,z) = float(y!=z)
 # define truncated log loss
@@ -22,6 +14,4 @@ clipsqloss(y,z) = min((y-z)^2,1)
 
 function empirical_loss(labels::Array{Float64,1},predictions::Array{Float64,1},lossfct)
     return sum(map(lossfct,labels,predictions))/length(labels)
-end
-
 end

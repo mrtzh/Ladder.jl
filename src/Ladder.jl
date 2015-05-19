@@ -1,10 +1,12 @@
 module Ladder
-using Losses
 
-export Submission
-export LadderState
-export ladder
-export score!
+export Submission,
+    LadderState,
+    ladder,
+    score!,
+    empirical_loss
+
+include("losses.jl")
 
 type Submission
     id::String
