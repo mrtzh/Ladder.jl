@@ -25,10 +25,11 @@ This is the code repository for [this paper](http://arxiv.org/abs/1502.04585). H
   biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/BlumH15},
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
+```
 If you use the code, we encourage you to cite our paper.
 
 ## Examples
-```
+
 The basic usage is as follows:
 ```
 using Ladder
